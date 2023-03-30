@@ -5,7 +5,6 @@ function calculateBMI() {
   //find dom and store
   const weightInput = document.getElementById("weight").value;
   const heightInput = document.getElementById("height").value;
-
   //if user click calculate button without value than show a alart
   if (weightInput == "" && heightInput == "") {
     alert("please insart a value");
