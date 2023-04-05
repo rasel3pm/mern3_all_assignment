@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.clock-area {
+    width: 480px;
+    height: 200px;
+    background-color: rgba(8, 5, 1, 0.8);
+    border: 2px dotted rgb(31, 232, 247);
+}
+
+.clock h1 {
+    color: rgb(31, 232, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    font-size: 45px;
+    letter-spacing: 5px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}

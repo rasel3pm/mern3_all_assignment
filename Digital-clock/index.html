@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="container">
+            <div class="clock-area">
+                <div class="clock">
+                    <h1 id="clock"></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        //dicliar a simple function name digitalClock
+        function digitalClock() {
+            //create a date object
+            let date = new Date();
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let second = date.getSeconds();
+            let timeFormate = "AM"
+            if (hours === 0) {
+                hours = 12;
+            }
+
+            if (hours > 12) {
+                hours = hours - 12;
+                timeFormate = "PM"
+            }
+
+            hours = hours < 10 ? "0" + hours : hours;
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            second = second < 10 ? "0" + second : second;
+
+
+            const outPut = `${hours}:${minutes}:${second}:${timeFormate}`
+            document.getElementById("clock").innerHTML = outPut
+
+
+
+        }
+        //function call in setInterval
+        setInterval(digitalClock, 1000)
+
+
+        //firstly create a Date() object store in the date variable using let 
+        //than get hours, minutes, seconds, and time formate in a let variable for reasign
+        //use an if condition, if hours equal to 0 with type so hours have 12
+        //again use the if condition for check hours gather than 12 so hours equal to hours Subtraction 12, and the time format will be PM
+        //now I use the ternary operator if hours are less than 10 so adjust 0 before hours, and the same check for minutes, and second
+        //outPut variable hold hours, minutes, seconds and timeFormate using template lateral
+        //digitalClock function call in a setInterval, and execute after 1s
+        //fignlly output show in clock id,
+
+    </script>
+</body>
+
+</html>
