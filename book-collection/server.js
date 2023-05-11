@@ -6,12 +6,18 @@ const router = require("./router")
 const app = express();
 
 //middleware
+// app.use(cors({
+//     origin:"http://127.0.0.1:5500"
+// }))
+app.use(cors({
+    origin:"http://localhost:63342",
+}))
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(helmet())
 app.use(router)
-app.use(cors())
+
 
 
 const port = 8080
