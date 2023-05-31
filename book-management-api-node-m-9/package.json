@@ -1,0 +1,26 @@
+{
+  "name": "book-management-api-node-m-9",
+  "version": "1.0.0",
+  "description": "ostad mern batch-3 module-9 assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "author": "Rasel Kibria",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "dotenv": "^16.1.2",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^7.0.0",
+    "mongoose": "^7.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
