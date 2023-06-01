@@ -17,7 +17,8 @@ const bookSchema = new Schema(
       require: true,
     },
     publishedYear: {
-      type: Number,
+      type: Date,
+      default: () => new Date().getFullYear(),
     },
   },
   { timestamps: true, versionKey: false }
