@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,600;0,800;0,900;1,100;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #F8F6F4;
+}
+:root{
+    --bgColor:#ffff;
+    --headingColor:#3A98B9;
+    --border:#ccc;
+    --tableBg:#3A98B9;
+}
+/* style container  */
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.heading{
+    background-color: var(--bgColor);
+    margin: 30px 0px;
+    padding: 40px;
+    text-align: center;
+}
+.heading h1,p{
+    color: var(--headingColor);
+}
+.heading h1{
+    padding-bottom: 30px;
+
+}
+.heading p{
+    font-weight: 500;
+}
+.list{
+    background-color:var(--bgColor);
+    padding: 20px;
+
+}
+.list ul{
+    display: flex;
+    justify-content: center;
+}
+.list ul li{
+    padding: 0px;
+    margin: 10px;
+}
+.image img{
+    width: 100%;
+    height: 400px;
+}
+
+
+.table {
+    width: 100%;
+    align-items: center;
+    border-collapse: collapse;
+    margin: 20px 0px;
+}
+    
+.table th,
+.table td {
+    padding: 8px;
+    border: 1px solid var(--border);
+}
+    
+.table thead th {
+    background-color: var(--tableBg);
+    font-weight: bold;
+}
+.table tbody tr:nth-child(even) {
+    background-color: var(--bgColor);
+}
+    
+.table tbody tr:hover {
+    background-color: var(--bgColor);
+}
+
