@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- FontAwsome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Boostrup Web Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light">
+    <div>
+        <!-- Header  -->
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img width="100" src="./image/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-auto">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Course</a>
+                        <a class="nav-link" href="#">Blog</a>
+                    </div>
+                    <div class="navbar-nav px-3 py-2 bg-light rounded">
+                        <i onclick="toggleMode()" class="fa-solid fa-circle-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div class="container py-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-8 col-md-8 col-sm-8 col-12">
+                            <!-- Title  -->
+                            <div>
+                                <span class="border-bottom">কারেন্ট মডিউল</span>
+                                <p>এই মডিউলে আপনাকে স্বাগতম। এই মডিউলে আমরা Bootstrap সম্পর্কে জানবো। </p>
+                            </div>
+                            <!-- Module section  -->
+                            <div class="row">
+                                <!-- module status -->
+                                <div class="col-12 col-sm-12 col-md-12 col-xl-12">
+                                    <div class="row bg-dark p-4 rounded text-white align-items-center">
+                                        <div class="col-5">
+                                            <!-- module no  -->
+                                            <span class="bg-danger rounded p-2 ">মডিউল ১৩</span>
+                                            <!-- module duration  -->
+                                            <span>১৬ জুন - ২২ জুন </span><span class="fs-5 fw-bold">Boostrup</span>
+                                        </div>
+                                        <div class="col-7 d-flex justify-center">
+                                            <div class="progress" style="width: 50%;height: 10px;">
+                                                <div class="progress-bar bg-success" role="progressbar"
+                                                    style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
+                                            </div>
+                                            <span class="mx-4">৫/৭ দিন শেষ </span>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- pre-racorded video section  -->
+                                <div class="col-12 py-4 ">
+                                    <div class="row bg-light border border-primary px-4 py-4 rounded">
+                                        <div class="col-12 d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-4 align-items-center">
+                                                <i class="fa-solid fa-video fs-1 text-success"></i>
+                                                <div class="">
+                                                    <span class="fw-bold">প্রি রেকর্ডেড ভিডিও</span><br>
+                                                    <span class="fw-light">৩৭৩ টি ভিডিও</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- problem solving class  -->
+                                <div class="col-12">
+                                    <div class="row bg-light border border-primary px-4 py-4 rounded">
+                                        <div class="col-12 d-flex justify-content-between align-items-center">
+                                            <div class="d-flex gap-4 align-items-center">
+                                                <i class="fa-solid fa-headset fa-beat-fade fs-1"
+                                                    style="color: #14d75f;"></i>
+                                                <div>
+                                                    <span class="fw-bold">প্রবলেম সলভিং ক্লাস</span><br>
+                                                    <span class="fw-light">বৃহ,২২ জুন,সকাল ১১:৩০</span>
+                                                </div>
+                                                <div>
+                                                    <span class="fw-bold text-danger">১৬ ঘন্টা ২৪ মিনিট বাকি</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button class="btn btn-secondary">প্রশ্ন করুন</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- total progress  -->
+                        <div class="col-xl-4 col-md-4 col-sm-4 col-12">
+                            <span class="border-bottom">টোটাল প্রোগ্রেস</span>
+                            <div class="p-2 border border-primary mt-4 rounded">
+                                <!-- progress title  -->
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <i class="fa-brands fa-wolf-pack-battalion fa-fade fs-1 border-circle border-primary p-1"
+                                            style="color: #da104d;"></i>
+                                    </div>
+                                    <div>
+                                        <span class="fw-bold text-danger">জোস! আপনি টপ স্কোরারদের একজন। </span><br>
+                                        <span>সিংহের মত নিজের পজিশন ধরে রাখুন। আপনিই হলেন বনের রাজা।</span>
+                                    </div>
+                                </div>
+                                <!-- class score -->
+                                <div class="d-flex justify-content-between border p-2 my-2 rounded">
+                                    <span>class score</span>
+                                    <span>93.6%</span>
+                                </div>
+                                <!-- score progress-bar -->
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                        <div class="card p-3">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">b</div>
+                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">c</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
