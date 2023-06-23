@@ -21,3 +21,7 @@ body.dark nav{
 body.dark .container .navbar-nav .nav-link{
     color: #ffffff;
 }
+body.dark .card{
+    background-color: #363434;
+    color: #ffffff;
+}
